@@ -33,6 +33,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'awesome_rails_console'
+gem 'font-awesome-rails'
 
 
 group :development, :test do
