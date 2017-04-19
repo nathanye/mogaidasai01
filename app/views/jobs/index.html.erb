@@ -1,3 +1,5 @@
+</br></br></br></br></br></br>
+
 <div class="pull-right">
   <%= link_to("增加职位", new_job_path, :class => "btn btn-default" ) %>
 </div>
@@ -22,8 +24,8 @@
     </ul>
 </div>
 
-<table class="table table-boldered">
-    <thead>
+<table id="wapper" class="table table-boldered">
+    <thead id="main-content">
         <tr>
             <td>
                 职缺</td>
@@ -33,7 +35,7 @@
         </tr>
 
     </thead>
-    <tbody>
+    <tbody id="main-content">
         <% @jobs.each do |job| %>
         <tr>
             <td>

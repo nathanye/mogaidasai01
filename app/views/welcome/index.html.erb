@@ -1,1 +1,319 @@
-<h1> Hello World! </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Bootstrap Portfolio Template developed by Mostafizur Rahman">
+    <meta name="author" content="Mostafiz">
+    <title>Folio – Responsive Bootstrap Portfolio Template</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- banner area starts here -->
+    <section class="banner text-center" id="sec1">
+        <div class="container">
+            <div class="row">
+                <h3> The Easiest Way To Find  </h3>
+
+                <h1>Your Dream Job</h1>
+
+                <br>
+                <p>If You Choose Us , We Make Your Career More Succeed </p>
+
+                <%= image_tag("pin.png") %>
+                <br>
+<!--<a class="button-banner"  href="/jobs">-->
+                <button class="know-more" ><a href="/jobs">FIND DREAM JOBS</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- end of banner section -->
+
+    <!-- about section -->
+    <section class="about text-center" id="sec2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 about-heading">
+                    <h2>
+						ABOUT US
+					</h2>
+                    <%= image_tag("daag.png") %>
+
+                    <p>
+                      Your next dream is here.
+
+                    </br>
+                    <span>Start hiring now on the world's #1 job site.</span>
+
+                    </br>
+                    Indeed helps millions of job seekers and employers find the right fit every day.</p>
+
+                </div>
+
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-clock-o"></i>
+                        <h3>Wait After Application</h3>
+                        <p>
+                          After registration ,
+
+                        </br>
+                          we will finish the review within 1 working day.
+                       </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-calendar"></i>
+                        <h3>Start The Auction</h3>
+
+                        <p>
+                          The auction begin on time every Monday,
+
+                        </br>
+                          your resume will be open to all enterprises for 7 days.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Receive The Invitation</h3>
+                        <p>
+                          For your favorite company directly to your invitation,
+
+                        </br>
+                          you will be informed by mail.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-handshake-o"></i>
+                        <h3>Appointment & Communication</h3>
+                        <p>
+                          Accept or refuse the invitation,
+                        </br> it's your right to choose.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+
+
+<!--
+
+    <!-- service section -1->
+
+    <section class="service text-left" id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="service-overlay"></div>
+                <div class="col-md-12">
+                    <h2>SERVICES</h2>
+                    <img src="img/daag.png" alt="">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        <br>
+                        <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-12 services">
+                    <div class="col-md-2 single-service col-xs-6 col-sm-3">
+                        <i class="fa fa-tachometer"></i>
+                        <h3>Title goes here</h3>
+                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+
+                    <div class="col-md-2 col-md-push-1 single-service col-xs-6 col-sm-3">
+                        <i class="fa fa-search"></i>
+                        <h3>Title goes here</h3>
+                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12  services bottom-services">
+
+                    <div class="col-md-2 single-service col-sm-3 col-xs-6">
+                        <i class="fa fa-stack-overflow"></i>
+                        <h3>Title goes here</h3>
+                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+
+                    <div class="col-md-2 col-md-push-1 single-service col-sm-3 col-xs-6">
+                        <i class="fa fa-bar-chart"></i>
+                        <h3>Title goes here</h3>
+                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -1->
+
+    <!-- portfolio section -1->
+
+    <section class="portfolio text-center" id="sec4">
+        <div class="row portfolio-row">
+            <div class="portfolio-heading">
+                <h2>MY WORK</h2>
+                <img src="img/daag.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    <br>
+                    <br> ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio2.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio2.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio3.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio3.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio4.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio4.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio5.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio5.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio6.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio6.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio7.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio7.jpg"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div class="col-md-3 single-portfolio col-sm-6">
+                <figure class="portfolio-item">
+                    <img class="img-responsive" src="img/portfolio8.jpg" alt="">
+                    <figcaption class="portfolio-details">
+                        <h4>Title goes here</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                    </figcaption>
+                </figure>
+                <a href="img/portfolio8.jpg"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- end of portfolio section -1->
+
+    <section class="contact text-center" id="sec5">
+        <div class="container">
+            <div class="row">
+                <article class="contact-heading">
+                    <h2>CONTACT ME</h2>
+                    <img src="img/daag.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        <br> ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- end of contact section -1->
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="form">
+                    <form action="contact.php">
+                        <div class="sbtn col-md-12 text-center">
+                            <input class="name form-input" type="text" placeholder="NAME">
+                            <input class="email form-input" type="email" placeholder="EMAIL">
+                            <input class="message form-input" type="text" placeholder="MASSAGE">
+                            <input class="submit-btn" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts here -1->
+-->
+
+
+
+    <!-- script tags
+	============================================================= -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
