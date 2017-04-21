@@ -71,6 +71,8 @@ a:hover, a:visited, a{
 	margin: 0;
 	padding: 0;
 }
+
+/*
 .top-header img.logo{
 	float: left;
 	margin-top: 8px;
@@ -81,6 +83,8 @@ a:hover, a:visited, a{
 	-o-transition:all 0.7s ease 0s;
 	-ms-transition:all 0.7s ease 0s;
 }
+*/
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -175,15 +179,16 @@ ul.nav{
 	font-size: 18px;
 	color: #fff;
 }
+
 .banner img{
 	margin: 50px;
 }
+
 
 .banner button{
 	width: 190px;
 	height: 50px;
 	font-size: 14px;
-	color: #0b1016;
 	background: #FED952;
 	border-radius: 2px;
 	border: 0px;
@@ -332,6 +337,7 @@ ul.nav{
 .single-service:hover.single-service p{
 	color: #fff;
 }
+
 /*portfolio area*/
 .portfolio h2{
 	font-size: 46px;
@@ -488,13 +494,95 @@ color:#EFEFEF;
 /*footer area*/
 
 .footer{
-	background: #000;
+	position: relative;/*此auto也可，其他不可*/
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+	background: #02918C;
+	color: #fff;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -5px;/*此-5px可根据页面实际情况进行调节*/
+}
+
+/*body {
+  position: relative;
+  margin-bottom: 100px; /* 一定要和footer的高度一致 *2/
+  min-height: 100%;
+}*/
+
+
+.link {
+	color: #FED952;
+}
+
+.link:hover {
+	color: #98a8aa;
 }
 
 .footer p{
-	color: #7e8287;
-	font-size: 12px;
+	font-weight: bold;
+	font-size: 16px;
 	padding:25px;
+}
+
+i {
+	color:#fff;
+}
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+
+	background-color: #90A4AE;
+}
+
+.social-network a.icoGitHub:hover {
+	background-color:#90A4AE;
+}
+.social-network a.icoRss:hover i, .social-network a.icoGitHub:hover i {
+	color:#fff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
 }
 
 .navbar-default .navbar-toggle .icon-bar {

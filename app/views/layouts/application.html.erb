@@ -14,13 +14,15 @@
           <div class="row">
             <%= render "common/navbar" %>
           </div>
-            <%= render "common/flashes" %>
-          <!--<div class="page-wrap">-->
-            <%= yield %>
-          <!--</div>-->
         </div>
-          <!--<div class="row site-footer">-->
+          <div class="container-fluid">
+            <div class="wrapper">
+                <%= render "common/flashes" %>
+                <%= yield %>
+            </div>
+        </div>
+          <div class="push"></div>
             <%= render "common/footer" %>
-        <!--</div>-->
+          </div>
     </body>
 </html>
