@@ -21,39 +21,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
-//footer置底//
-/*
-* {
-  margin: 0;
-}
-
-html {
-  height: 100%;
-}
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height *1/
-  margin-bottom: -142px;
-}
-
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-
-.site-footer, .page-wrap:after {
-  height: 142px;
-}
-*/
-
 // welcome美化 //
 
 body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 }
+
 
 a:hover, a:visited, a{
 	text-decoration: none;
@@ -63,7 +39,6 @@ a:hover, a:visited, a{
 
 .top-header{
 	background: #02918C;
-	position: fixed;
 	width: 100%;
 	z-index: 333;
 }
@@ -72,37 +47,30 @@ a:hover, a:visited, a{
 	padding: 0;
 }
 
-/*
-.top-header img.logo{
-	float: left;
-	margin-top: 8px;
-	margin-bottom: 30px;
-	transition:all 0.7s ease 0s;
-	-webkit-transition:all 0.7s ease 0s;
-	-moz-transition:all 0.7s ease 0s;
-	-o-transition:all 0.7s ease 0s;
-	-ms-transition:all 0.7s ease 0s;
-}
-*/
 
 .navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+  background-color: #02918C;
+	border-color: transparent;
   margin-bottom: 0;
-  margin-top: 23px;
+  margin-top: 0;
   transition:all 0.7s ease 0s;
 	-webkit-transition:all 0.7s ease 0s;
 	-moz-transition:all 0.7s ease 0s;
 	-o-transition:all 0.7s ease 0s;
 	-ms-transition:all 0.7s ease 0s;
 }
+
 .navbar-toggle span{
 	color: #fff;
 }
+
+
 ul.nav{
 	margin: 0;
 	padding: 0;
 }
+
+
 .navbar-default .navbar-nav>li>a {
  	font-size: 12px;
 	color: #fff;
@@ -113,23 +81,22 @@ ul.nav{
 	-moz-transition: all .7s ease 0s;
 	-o-transition: all .7s ease 0s;
 	-ms-transition: all .7s ease 0s;
-	padding: 5px 20px;
 	border-radius: 5px;
 }
+
 .navbar-default .navbar-nav>li>a:hover{
 	color: red;
 	background-color: #fff;
 }
 .navbar-default .navbar-toggle {
-  border-color: #fff;
   margin-top: 4px;
 }
 
 .navbar-brand > img {
   display: inline-block; //图片和链接文字显示在同一行
   margin-right: 10px; //图片和链接文字拉开一点距离
-  width: 32px; //定制图片宽度
-  height: 32px; //定制图片高度
+  width: 28px; //定制图片宽度
+  height: 28px; //定制图片高度
 }
 
   .navbar-default .navbar-brand {
@@ -142,8 +109,6 @@ ul.nav{
   	-moz-transition: all .7s ease 0s;
   	-o-transition: all .7s ease 0s;
   	-ms-transition: all .7s ease 0s;
-  	padding: 0 20px;
-  	border-radius: 5px;
   }
 
   .navbar-default .navbar-brand:hover,
@@ -207,6 +172,8 @@ ul.nav{
 	color: #fff;
 }
 
+
+
 /*about section*/
 .about{
 	background: #fff;
@@ -264,77 +231,6 @@ ul.nav{
 	color: #fff;
 }
 .single-about:hover .about-inside h3{
-	color: #fff;
-}
-
-/*service area*/
-.service{
-	margin: 0;
-	padding: 0;
-	background: url(../img/typing-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
-.service-overlay{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.43);
-}
-.service h2{
-	font-size: 46px;
-	color: #02918c;
-	text-transform: uppercase;
-	font-weight: 800;
-	margin-top: 75px;
-	margin-bottom: 40px;
-}
-.service p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-top: 35px;
-}
-.services{
-	margin-left: 0;
-	padding-left: 0;
-}
-.bottom-services{
-	margin-bottom: 80px;
-}
-.single-service{
-	margin-left: 0;
-	padding-left: 20px;
-	margin-top: 50px;
-	background: #F5F5F1;
-}
-.single-service:hover{
-	background: red;
-}
-.single-service i.fa{
-	color: #08938e;
-	font-size: 30px;
-	padding-top: 15px;
-}
-.single-service h3{
-	font-size: 16px;
-	color: #7e8287;
-}
-.single-service p{
-	font-size: 11px;
-	color: #7e8287;
-	margin-top: 5px;
-}
-.single-service:hover.single-service i.fa{
-	color: #fff;
-}
-.single-service:hover.single-service h3{
-	color: #fff;
-}
-.single-service:hover.single-service p{
 	color: #fff;
 }
 
@@ -449,12 +345,7 @@ input.name{
 	margin-top: 55px;
 	width: 640px;
 }
-input.email{
-	width: 640px;
-}
-input.message{
-	width: 920px;
-}
+
 .contact-form input.submit-btn{
 	width: 200px;
 	height: 50px;
@@ -494,30 +385,15 @@ color:#EFEFEF;
 /*footer area*/
 
 .footer{
-	position: relative;/*此auto也可，其他不可*/
-  bottom: 0;
-  width: 100%;
-  height: 100px;
 	background: #02918C;
 	color: #fff;
 }
 
-html, body {
-    height: 100%;
+.footer-below-forever{
+  padding: 0;
+	bottom: 0;
+	width: 100%;
 }
-
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -5px;/*此-5px可根据页面实际情况进行调节*/
-}
-
-/*body {
-  position: relative;
-  margin-bottom: 100px; /* 一定要和footer的高度一致 *2/
-  min-height: 100%;
-}*/
 
 
 .link {
@@ -600,82 +476,14 @@ a.socialIcon:hover, .socialHoverClass {
 /******************************
 responsive area
 ********************************/
-/* lg */
-@media (min-width: 1200px) {
 
-}
-
-/* md */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-
-}
-
-/* sm */
-@media (min-width: 768px) and (max-width: 991px) {
-	.single-service{
-		margin-bottom: 30px;
-	}
-	.navbar-default .navbar-nav>li>a{
-		padding: 12px 10px;
-	}
-	input.message {
-	  width: 718px;
+/* navbar */
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 0; //圆角为0
 	}
 }
 
-/* xs */
-@media (min-width: 480px) and (max-width: 767px) {
-	input.name {
-	  margin-top: 55px;
-	  width: 420px;
-	}
-	input.email{
-		width: 420px;
-	}
-	input.message{
-		width: 420px;
-	}
-	.banner h1 {
-	  font-size: 60px;
-	  letter-spacing: 3px;
-	}
-	.about-inside{
-		padding: 10px;
-	}
-}
-
-/* XS Portrait */
-@media (max-width: 479px) {
-	.logo{
-		margin-top: 10px;
-	}
-	input.name{
-		margin-top: 55px;
-		width: 275px;
-	}
-	input.email{
-		width: 275px;
-	}
-	input.message{
-		width: 275px;
-	}
-	.contact-form input.submit-btn{
-		width: 200px;
-		height: 50px;
-		border:0;
-	}
-	.banner h1 {
-		  font-size: 38px;
-		  letter-spacing: 0px;
-	}
-	.navbar-header{
-		margin-top: 5px !important;
-	}
-	.about-inside{
-		padding: 0px;
-	}
-}
 
 
 // .admin_panel(管理员后台样式) //
@@ -752,9 +560,9 @@ responsive area
   font-weight: 700;
   height: 36px;
   padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
+ 	border-radius: 3px;
+ 	-webkit-user-select: none;
+  user-select: none;
 }
 
 .loginmodal-submit {
