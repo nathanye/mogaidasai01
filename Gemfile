@@ -36,6 +36,11 @@ gem 'awesome_rails_console'
 gem 'font-awesome-rails'
 gem 'carrierwave'
 
+# version03
+gem 'ransack'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

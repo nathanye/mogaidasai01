@@ -30,7 +30,7 @@
             <th>Job Title</th>
             <th>Salary Min.</th>
             <th>Salary Max.</th>
-            <th>Posted Date/Time</th>
+            <th>Posted Date</th>
         </tr>
 
     </thead>
@@ -47,7 +47,7 @@
                 <%= job.wage_upper_bound %>
             </td>
             <td>
-                <%= job.created_at %>
+                <%= job.created_at.strftime("%m-%d") %>
             </td>
         </tr>
         <% end %>

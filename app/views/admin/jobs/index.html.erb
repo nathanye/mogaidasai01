@@ -23,7 +23,7 @@
                 Manage Setting
             </th>
             <th>
-                Posted Date/Time
+                Posted Date
             </th>
         </tr>
     </thead>
@@ -49,7 +49,7 @@
             <% end %>
         </td>
         <td>
-            <%= job.created_at %>
+            <%= job.created_at.strftime("%m-%d") %>
         </td>
     </tr>
     <% end %>
