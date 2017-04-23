@@ -412,11 +412,21 @@ color:#EFEFEF;
 	color: #fff;
 }
 
-.footer-below-forever{
-  padding: 0;
-	bottom: 0;
-	width: 100%;
+/* footer 置底 */
+
+html {
+	height: 100%;
 }
+
+body {
+ 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	 flex: 1;
+ }
 
 
 .link {
