@@ -47,6 +47,7 @@ a:hover, a:visited, a{
 	padding: 0;
 }
 
+/* Navbar */
 
 .navbar-default {
   background-color: #02918C;
@@ -58,6 +59,20 @@ a:hover, a:visited, a{
 	-moz-transition:all 0.7s ease 0s;
 	-o-transition:all 0.7s ease 0s;
 	-ms-transition:all 0.7s ease 0s;
+}
+
+/* Navbar悬浮 */
+
+.navbar-fixed-top {
+	top: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
 }
 
 .navbar-toggle span{
@@ -413,6 +428,7 @@ color:#EFEFEF;
 }
 
 /* footer 置底 */
+
 
 html {
 	height: 100%;
