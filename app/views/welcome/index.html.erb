@@ -1,325 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="job-header">
+  <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-background" %>
+  <div class="row box">
+    <div class="box-inner col-md-6 col-md-offset-3">
+      <h1 class="title">Enjoy The Moment</h1>
+      <p class="slogan">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive Bootstrap Portfolio Template developed by Mostafizur Rahman">
-    <meta name="author" content="Mostafiz">
-    <title>Dream Job</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+        我们需要年轻的声音
+        <br>
+        渴望独立、自由的你就应属于这里
+        <br>
+        不甘沉默就为沉默发声
+        <br>
 
-</head>
+      </p>
 
 
+      <p class="title-btn">
+        <%= link_to '马上发声', jobs_path, class: 'btn btn-danger' %>
+      </p>
+    </div>
+  </div>
+</div>
 
-<body>
+
+ <div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">与独立音乐人更近一步</h2>
+        <p class="lead">带你走进一场Live的台前幕后</p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">独立音乐的孤独患者</h2>
+        <p class="lead-2">我们愿意聆听向往自由的沉默之声</p>
+      </div>
+      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+        <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">独立“顽童”集散地</h2>
+        <p class="lead">自由是我们共同的 Slogan </a></p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    <!-- banner area starts here -->
-    <section class="banner text-center" id="sec1">
-        <div class="container-fluid">
+    <!-- job category section -->
+
+    <!-- <div class="container-fluid text-center">
+          <div class="col-md-8 col-md-offset-2">
             <div class="row">
-                <h3> The Easiest Way To Find  </h3>
-
-                <h1>Your Dream Job</h1>
-
-                <br>
-                <p> If You Choose Us , We Make Your Career More Succeed </p>
-
-                <%= image_tag("pin.png") %>
-                <br>
-                <!--<a class="btn btn-primary-welcome"  href="jobs" role="button"></a>-->
-                <button><a href="/jobs">FIND DREAM JOBS</a></button>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <!-- end of banner section -->
-
-    <!-- about section -->
-    <section class="about text-center" id="sec2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 about-heading">
-                    <h2>
-						ABOUT US
-					</h2>
-                    <%= image_tag("daag.png") %>
-
-                    <p>
-                      Your next dream is here.
-
-                    </br>
-                    <span>Start hiring now on the world's #1 job site.</span>
-
-                    </br>
-                    Indeed helps millions of job seekers and employers find the right fit every day.</p>
-
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-clock-o"></i>
-                        <h3>Wait After Application</h3>
-                        <p>
-                          After registration ,
-
-                        </br>
-                          we will finish the review within 1 working day.
-                       </p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-calendar"></i>
-                        <h3>Start The Auction</h3>
-
-                        <p>
-                          The auction begin on time every Monday,
-
-                        </br>
-                          your resume will be open to all enterprises for 7 days.
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-envelope"></i>
-                        <h3>Receive The Invitation</h3>
-                        <p>
-                          For your favorite company directly to your invitation,
-
-                        </br>
-                          you will be informed by mail.
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-handshake-o"></i>
-                        <h3>Appointment & Communication</h3>
-                        <p>
-                          Accept or refuse the invitation,
-                        </br> it's your right to choose.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of about section -->
-
-
-<!--
-
-    <!-- service section -1->
-
-    <section class="service text-left" id="sec3">
-        <div class="container">
-            <div class="row">
-                <div class="service-overlay"></div>
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                      <h2 class="section-title">合作场地</h2>
+                      <hr style="width:120px;">
+                  </div>
+              </div>
                 <div class="col-md-12">
-                    <h2>SERVICES</h2>
-                    <img src="img/daag.png" alt="">
+                    <div class="row">
+                        <div class="col-md-4">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        <br>
-                        <br> tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="col-md-12 services">
-                    <div class="col-md-2 single-service col-xs-6 col-sm-3">
-                        <i class="fa fa-tachometer"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
-
-                    <div class="col-md-2 col-md-push-1 single-service col-xs-6 col-sm-3">
-                        <i class="fa fa-search"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-12  services bottom-services">
-
-                    <div class="col-md-2 single-service col-sm-3 col-xs-6">
-                        <i class="fa fa-stack-overflow"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
-
-                    <div class="col-md-2 col-md-push-1 single-service col-sm-3 col-xs-6">
-                        <i class="fa fa-bar-chart"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about section ends -1->
-
-    <!-- portfolio section -1->
-
-    <section class="portfolio text-center" id="sec4">
-        <div class="row portfolio-row">
-            <div class="portfolio-heading">
-                <h2>MY WORK</h2>
-                <img src="img/daag.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    <br>
-                    <br> ut labore et dolore magna aliqua.</p>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio2.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio2.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio3.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio3.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio4.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio4.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio5.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio5.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio6.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio6.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio7.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio7.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <img class="img-responsive" src="img/portfolio8.jpg" alt="">
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio8.jpg"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- end of portfolio section -1->
-
-    <section class="contact text-center" id="sec5">
-        <div class="container">
-            <div class="row">
-                <article class="contact-heading">
-                    <h2>CONTACT ME</h2>
-                    <img src="img/daag.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        <br> ut labore et dolore magna aliqua.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!-- end of contact section -1->
-
-    <section class="contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="form">
-                    <form action="contact.php">
-                        <div class="sbtn col-md-12 text-center">
-                            <input class="name form-input" type="text" placeholder="NAME">
-                            <input class="email form-input" type="email" placeholder="EMAIL">
-                            <input class="message form-input" type="text" placeholder="MASSAGE">
-                            <input class="submit-btn" type="submit">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E5%BC%80%E5%8F%91">
+                                <!-- <i class="partner-icon partner-icon-smao"></i> -->
+                                <!-- <img class="img-welcome img-circle" src="/images/mao.png" alt="MAOLiveHouse">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place">MAO LiveHouse</h3>
+                            </div>
                         </div>
-                    </form>
+
+                        <div class="col-md-4">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E5%8C%BB%E6%8A%A4">
+                                <img class="img-welcome img-circle" src="/images/doctor.png" alt="Doctor">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place"> 愚公移山 </h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90">
+                                <img class="img-welcome img-circle" src="/images/human-resources.png" alt="Human resources">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place"> 糖果 </h3><br>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E8%AE%BE%E8%AE%A1">
+                                <img class="img-welcome img-circle" src="/images/pen.png" alt="Pen">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place">浅水湾</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E9%94%80%E5%94%AE">
+                                <img class="img-welcome img-circle" src="/images/sale.png" alt="Sale">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place"> VOX </h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="expert-box">
+                              <a href="/jobs?category=%E6%B3%95%E5%BE%8B">
+                                <img class="img-welcome img-circle" src="/images/balance.png" alt="Balance">
+                              </a>
+                            </div>
+                            <div>
+                              <h3 class="place"> 育音堂 </h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br><br>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
+        </div> -->
 
-    <!-- footer starts here -1->
--->
-
-
-
-    <!-- script tags
-	============================================================= -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-</body>
-
-</html>
+<!-- end of job category section -->

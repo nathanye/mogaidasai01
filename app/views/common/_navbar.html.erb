@@ -57,9 +57,8 @@ header section --1>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <%= link_to root_path, class: "navbar-brand default-logo scroll" do %>
-            <%= image_tag("logo.png", :class => "logo_img") %> Dream Job
+            <a class="navbar-brand" href="/"><i class="fa fa-heartbeat" aria-hidden="true"> 沉默之声 </i></a>
           <% end %>
-            <!--<a class="navbar-brand" href="/"> Dream Job </a>-->
         </div>
 
 
@@ -69,7 +68,7 @@ header section --1>
           <div class="nav navbar-nav navbar-left">
           <%= form_tag search_jobs_path , :method => :get do %>
           <div class="input-group" id="search-id" >
-            <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="Find Dream Job...">
+            <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="开始发声...">
             <div class="input-group-btn">
               <button class="btn btn-default" type="submit">
                 <i class="glyphicon glyphicon-search"></i>
@@ -82,8 +81,8 @@ header section --1>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                  <% if !current_user %>
-                  <li><a href="#" data-toggle="modal" data-target="#signup-modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#signup-modal"><span class="glyphicon glyphicon-user"></span> 注册 </a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in"></span> 登录 </a></li>
                  <% else %>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -92,9 +91,9 @@ header section --1>
                     </a>
                     <ul class="dropdown-menu">
                       <% if current_user.admin? %>
-                        <li> <%= link_to("Admin Panel", admin_jobs_path) %> </li>
+                        <li> <%= link_to("后台管理", admin_jobs_path) %> </li>
                       <% end %>
-                      <li> <%= link_to("Log Out", destroy_user_session_path, method: :delete) %> </li>
+                      <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
                     </ul>
                   </li>
                 <% end %>
@@ -111,15 +110,15 @@ header section --1>
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog" role="document">
     <div class="loginmodal-container">
-       <h2>Log in</h2>
+       <h2>登 录</h2>
        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
          <div class="form-inputs">
-           <%= f.input :email, required: false, autofocus: true %>
-           <%= f.input :password, required: false %>
-           <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+           <%= f.input :email, :label => "邮箱", required: false, autofocus: true %>
+           <%= f.input :password, :label => "密码", required: false %>
+           <%= f.input :remember_me,:label => "记住密码", as: :boolean if devise_mapping.rememberable? %>
          </div>
          <div class="form-actions">
-           <%= f.button :submit, "Log in" %>
+           <%= f.button :submit, "登 录" %>
          </div>
        <% end %>
     </div>
@@ -129,16 +128,16 @@ header section --1>
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
     <div class="loginmodal-container">
-      <h2>Sign up</h2>
+      <h2>注 册</h2>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
         <div class="form-inputs">
-          <%= f.input :email, required: true, autofocus: true %>
-          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-          <%= f.input :password_confirmation, required: true %>
+          <%= f.input :email,:label => "邮箱", required: true, autofocus: true %>
+          <%= f.input :password,:label => "密码", required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+          <%= f.input :password_confirmation,:label => "确认密码", required: true %>
         </div>
         <div class="form-actions">
-            <%= f.button :submit, "Sign up" %>
+            <%= f.button :submit, "注 册" %>
         </div>
       <% end %>
     </div>

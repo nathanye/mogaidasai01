@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Dream Job </title>
+        <title> 沉默之声 </title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,8 +14,10 @@
         <div class="container-fluid">
           <div class="row">
             <%= render "common/navbar" %>
-
+            <%= render "common/flashes" %>
+            <div style="margin-top:50px;">
                 <%= yield %>
+            </div>
           </div>
         </div>
       </div>
