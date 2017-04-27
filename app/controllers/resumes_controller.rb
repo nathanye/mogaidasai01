@@ -8,7 +8,6 @@ class ResumesController < ApplicationController
     if current_user.has_applied?(@job)
         flash[:warning] = "You can't push resume again!"
         redirect_to job_path(@job)
-      end
     end
   end
 
