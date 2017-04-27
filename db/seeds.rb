@@ -34,8 +34,8 @@ for i in 1..10 do
   Job.create!([
     title: job_title[rand(job_title.length)],
     description: job_description[rand(job_title.length)],
-    wage_upper_bound: rand(40..58) * 1000,
-    wage_lower_bound: rand(20..30) * 1000,
+    wage_upper_bound: rand(40..58) * 100,
+    wage_lower_bound: rand(20..30) * 100,
     is_hidden: 'false'
   ])
 end
@@ -44,8 +44,8 @@ for i in 1..10 do
   Job.create!([
     title: job_title[rand(job_title.length)],
     description: job_description[rand(job_title.length)],
-    wage_upper_bound: rand(40..79) * 1000,
-    wage_lower_bound: rand(20..39) * 1000,
+    wage_upper_bound: rand(40..79) * 100,
+    wage_lower_bound: rand(20..39) * 100,
     is_hidden: 'false'
   ])
 end
